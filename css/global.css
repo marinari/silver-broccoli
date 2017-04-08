@@ -1,0 +1,192 @@
+/* Main site styles */
+
+body {
+	padding-top: 70px;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.main-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fafafa;
+	border-bottom: 2px solid #ccc;
+	height: 70px;
+	width: 100%;
+	box-shadow: 0 0 4px 2px #15151e; 
+}
+
+#brand {
+	text-indent: -90000px;
+	background: url() no-repeat top left;
+	background-size: cover;
+	height: 60px;
+	width: 60px;
+	float: left;
+	margin: 5px;
+}
+
+.main-nav ul {
+	float: right;
+	width: auto;
+}
+
+.main-nav li {
+	float: left;
+	width: auto;
+	font-family: 'Raleway', Helvetica;
+	font-weight: 400;
+
+}
+
+.main-nav li a {
+	padding: 25px 10px;
+	display: block;
+	text-decoration: none;
+	color: #622951;	
+	transition-property: all; /*the following props animate the nav links*/
+	transition-duration: .5s;
+	transtion-timing-function: ease-out;
+}
+	
+	.main-nav li a:hover,
+	 .main-nav li a:focus {
+	 	color: #595959;
+	 	font-size: 14pt;
+	 }
+	 	
+.container {
+	max-width: 1024px;
+	margin: 0 auto; 
+	
+}
+
+#hero {
+	background: url(../images/gal1.jpg) no-repeat bottom right;
+	text-align: center;
+	color: #F2F2F2;
+	background-size: cover;
+	height: 300px;
+	padding: 25px;
+	font-family: 'Righteous', cursive;
+}
+
+#hero img {
+	width: 200px;
+	border-radius: 5px;
+}
+
+#hero h1 {
+	font-size: 400%;
+	margin: 10px;
+	text-shadow: 4px 4px 2px #404040;
+	transition-property: text-shadow;
+	transition-duration: 1s;
+}
+
+#hero h1:hover{
+	text-shadow: 0px 0px 0px #404040;
+}
+
+#hero span.city {
+	border: 2px solid #F2F2F2;
+	padding: 10px;
+	display: inline-block;
+	margin-top: 3px;
+	font-size: 100%;
+	color: #F2F2F2;
+}
+
+#main-content {
+	background-image: url(../images/tasky_pattern.png);
+	text-align: center;
+	padding: 25px 0;
+	overflow: hidden;
+}
+
+article img {
+	border-radius: 5px;
+	width: 150px;
+}
+
+article {
+	color:#e6e6e6;
+}
+
+.column {
+	float: left;
+	width: 30%;
+	padding: 15px;
+}
+
+
+.endnote {
+    background: #080510;
+    color: #fafafa;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.endnote ul {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.endnote li {
+    float: left;
+    padding: 20px;
+}
+
+/* figure out a way to make icons larger and auto size down*/
+.endnote i {
+	width: 500%;
+}
+
+/* only use when social "buttons" are images instead of "i" */
+.endnote img {
+	width: 100%;
+}
+
+/* Smartphones (portrait) */
+@media (max-width: 900px){
+	.column {
+		width: 100%;
+	}
+	#hero {
+		height: auto;
+	}
+	#hero h1 {
+		font-size: 200%;
+	}
+
+	#hero span.city{
+		font-size: 80%;
+	}
+
+	.column p {
+		font-size: 10px;
+	}
+
+	.endnote li a {
+		display: block;
+		width: 25px;
+	}
+
+	.endnote p{
+		font-size: 8px;
+	}
+
+}
+
+/* iPads (landscape)          */
+@media screen and (min-device-width : 768px) 
+    and (max-device-width : 1024px) and (orientation : landscape) {
+            /* Styles */
+}
+
+@media print {
+	#header-image {
+		display: none;
+	}
+}
